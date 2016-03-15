@@ -3,9 +3,17 @@ body {
   text-align: center;
 }
 
+h1 {
+  margin-bottom: 100px;
+}
+
 .clockOutline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 600px;
-  height: 400px;
+  height: 200px;
   border: 2px solid tomato;
   margin: 0 auto;
 }
