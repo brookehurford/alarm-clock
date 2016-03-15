@@ -6,6 +6,13 @@ $(document).ready(function() {
     $('#time').text(moment().format("HH:mm:ss A"));
   }
   setInterval(displayTime, 1000);
+
+  $("form.setAlarm").submit(function(event){
+    event.preventDefault();
+    var timeInput = $("input.alarmTime").val();
+
+    $("ul#alarmList").append("<li>" + timeInput + "</li>");
+  });
 });
 
 

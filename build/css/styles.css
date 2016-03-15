@@ -4,7 +4,16 @@ body {
 }
 
 h1 {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
+}
+
+.setAlarm {
+  margin: 50px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 18px;
 }
 
 .clockOutline {

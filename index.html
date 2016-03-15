@@ -11,7 +11,13 @@
   <body>
     <div class="container">
       <h1>Alarm Clock</h1>
-      <!-- <h3 id="time"></h3> -->
+      <form class="setAlarm">
+        <label for="time">Set Alarm</label>
+        <input class="alarmTime" type="time" name="name" value=""></input>
+        <button type="submit" name="button">Add Alarm</button>
+      </form>
+      <h4>Your Alarms</h4>
+      <ul id="alarmList"></ul>
       <div class="clockOutline">
         <h3 id="time"></h3>
         <p>By: Oskar &amp; Brooke</p>
