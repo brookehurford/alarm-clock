@@ -1,15 +1,17 @@
-// var displayTime = require('./../js/clock-interface.js');
+var displayTime = require('./../js/clock-interface.js');
 
 $(document).ready(function() {
-  function displayTime() {
-    $('#time').text(moment().format("HH:mm:ss A"));
-  }
-  setInterval(displayTime, 1000);
+  $('#time').text(moment().format("HH:mm"));
 
   $("form.setAlarm").submit(function(event){
     event.preventDefault();
     var timeInput = $("input.alarmTime").val();
 
-    $("ul#alarmList").append("<li>" + timeInput + "</li>");
+    $("ul#alarmList").append("<li class='alarmItem'>" + timeInput + "</li>");
+    console.log(timeInput);
+
+    $(".setAlarm")[0].reset();
+
+    return timeInput;
   });
 });
